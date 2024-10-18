@@ -26,9 +26,9 @@ print(euclid(a, b))
 
 def prime():
     if euclid(a, b) == "1が最大公約数です。":
-        return "さらにこの二数は互いに素です"
+        return True
     else:
-        return "しかし、互いに素ではありません"
+        return False
 
 print(prime())
 

@@ -14,7 +14,7 @@ result = integral(np.sin, 0, np.pi/2, 50)
 print(f"(1) Result is {result}.")
 
 # (2) 4/(1 + x^2) の積分
-result = integral(lambda x: 4 / (1 + x**2), 0, 1, 50)
+result = integral(lambda x: 4 / (1 + x**2), 0, 1, 100)
 print(f"(2) Result is {result}.")
 
 # (3) sqrt(π) * exp(−x^2) の積分

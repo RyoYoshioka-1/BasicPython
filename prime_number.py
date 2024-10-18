@@ -3,7 +3,7 @@ b = input("bの値を入力: ")
 
 # TODO
 
-if not isinstance(a or b, int):
+if not isinstance(a, b, int):
     print("These numbers is not valid!")
 
 else:
