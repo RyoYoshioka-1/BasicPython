@@ -3,27 +3,26 @@ b = input("bの値を入力: ")
 
 # TODO
 
-a = int(a)
-b = int(b)
+if not isinstance(a, b, int):
+    print("These numbers is not valid!")
 
-count = 0
-
-for i in range(1, a+1):
-    if a % i ==0:
-        count += 1   
-
-if count == 2:
-    print("{} is prime number!".format(a))
 else:
-    print("{} is not prime number.".format(a))
+    a = int(a)
+    b = int(b)
 
-count = 0
+    def prime(n):
+        count = 0
 
-for i in range(1, b+1):
-    if b % i ==0:
-        count += 1
+        for i in range(1, n+1):
+            if n % i == 0:
+               count += 1
 
-if count == 2:
-    print("{} is prime number!".format(b))
-else:
-    print("{} is not prime number.".format(b))
+        if count == 2:
+            return True
+        else:
+            return False
+
+    print(prime(a))
+    print(prime(b))
+
+
